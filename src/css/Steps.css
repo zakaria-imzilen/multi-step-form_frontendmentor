@@ -1,0 +1,53 @@
+#steps {
+    z-index: 1;
+    height: 16rem;
+    flex-wrap: nowrap;
+}
+
+@media all and (min-width: 992px) {
+    #steps {
+        padding: 2rem 0 50vh 0;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    #steps article {
+        max-width: 51%;
+    }
+
+}
+
+#steps>* {
+    z-index: 2;
+}
+
+#steps>img {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-position: bottom;
+    object-fit: cover;
+}
+
+.icon {
+    justify-content: center;
+    font-family: Ubuntu-Bold;
+    font-weight: 700;
+    width: 2rem !important;
+    height: 2rem;
+    border: 1px solid white;
+}
+
+.icon.active {
+    border: none;
+    background-color: hsl(228, 100%, 84%) !important;
+    color: hsl(213, 96%, 18%) !important;
+}
+
+@media all and (min-width: 992px) {
+
+    .icon {
+        justify-content: flex-end;
+    }
+
+}
